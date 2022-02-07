@@ -7,29 +7,34 @@ html {
   box-sizing: inherit;
 }
 
-/* PROJET 2 BOOKI */
+                                                                   /* PROJET 2 BOOKI */
 
-/* configuration pour un écran de plus de 992px  */
+                                                        /* configuration pour un écran de plus de 992px  */
 body {
   font-family: "Raleway", sans-serif;
-  max-width: 1200px;
+  width: 1200px;
   margin: auto;
   font-size: 12px;
 }
+
 .navigation, header, main {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
+                                                               /* BARRE DE NAVIGATION */
 .navigation {
   display: flex;
   justify-content: space-between;
   align-content: center;
   align-items: center;
-}
-.nav_logo {
+} 
+.nav_logo_gauche {
   max-width: 150px;
   padding: 20px 10px 0px 20px;
   margin-bottom: 20px;
+}
+.nav_logo_centre {
+  display: none;
 }
 .navigation a {
   color: black;
@@ -46,14 +51,23 @@ body {
   color: #0065fc;
   border-top: 3px solid #0065fc;
 }
+                                                              /* HEADER */
 h1 {
   font-size: 16px;
 }
+
+.formulaire {
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+}
+
 form {
   height: 30px;
   margin-top: 10px;
   margin-left: 30px;
   margin-right: 10px;
+  position: relative;
 }
 label {
   height: 30px;
@@ -66,8 +80,7 @@ label {
 .icon_lieu {
   position: absolute;
   z-index: 1;
-  transform: translate(-200%, 50%);
-  /* margin-right: 10px; */
+  transform: translate(-200%, 70%);
 }
 .ville {
   font-family: "Raleway", sans-serif;
@@ -75,8 +88,9 @@ label {
   border: 1px solid #f2f2f2;
   font-weight: 700;
   height: 30px;
-  /* padding: 15px; */
-  position: relative;
+  width:240px;
+  padding-left: 10px;
+  
 }
 .bouton_texte {
   background-color: #0065fc;
@@ -89,6 +103,7 @@ label {
   border: 1px solid #0065fc;
   border-radius: 0px 10px 10px 0px; 
   position: absolute;  
+  right:0px;
 }
 .loupe {
   display: none;
@@ -114,7 +129,7 @@ label {
 .filtres {
   font-weight: 700;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 .filtre {
   margin: 10px 5px 5px 20px;
@@ -144,19 +159,26 @@ label {
 .icone_info {
   color: #0065fc;
 }
+
+                                                                     /* MAIN */
 main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 h2 {
-  max-width: 60%;
+  /* max-width: 60%; */
   font-size: 16px;
   font-weight: bold;
-  padding-left: 20px;
+}
+
+                                                                 /* HEBERGEMENTS */
+
+.section_h h2 {
+  padding-left:20px;
 }
 .section_h {
-  width: 65%;
+  width: 70%;
   margin-top: 20px;
   padding: 20px;
   background-color: #f2f2f2;
@@ -164,16 +186,14 @@ h2 {
   line-height: 80%;
 }
 
-/* .hebergements {
-} */
 .cartes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .carte_h {
-  min-width:200px;
-  max-width: 100%;
+  min-width:230px;
+  /* max-width: 100%; */
   margin: 10px;
   background-color: white;
   border: 4px solid white;
@@ -207,17 +227,18 @@ h2 {
   font-size: 12px;
   margin-top: 10px;
 }
-.star {
+.etoile i, .etoile_p i {
   color: #0065fc;
+  font-size:10px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-.star i {
+/* .etoile i, .etoile_p i {
+  font-size: 10px;
+} */
+/* .etoile_p i {
   font-size: 12px;
-}
-.star_p i {
-  font-size: 12px;
-}
+} */
 .carte_h1 i:last-child {
   color: #f2f2f2;
 }
@@ -243,14 +264,21 @@ h2 {
   color: black;
   display: block;
 }
+                                                                    /* LES PLUS POPULAIRES */
 aside {
-  width: 32%;
+  /* width: 28%; */
   margin-top: 20px;
-  /* padding: 20px; */
-  padding: 20px 20px 0px 20px;
+  /* padding: 20px 20px 10px 20px; */
+  padding: 20px;
   background-color: #f2f2f2;
   border-radius: 20px;
 }
+aside h2 {
+  width: 70%;
+}
+/* .populaire {
+  height: 100%;
+} */
 .titre {
   width: 100%;
   display: flex;
@@ -260,18 +288,21 @@ aside {
 .icone_fleche {
   color: black;
 }
-.populaires {
-  width: 100%;
-  padding: 20px 20px 0px 20px;
+.cartes_p {
+  min-height: 420px;
+  /* max-width: 280px; */
+  margin-bottom: 20px;
+  /* padding: 20px 20px 0px 20px; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
-.cartes_p {
-  height: 140px;
-  width: 100%;
-  margin-bottom: 20px;
+.carte_p {
+  height: 118px;
+  /* height: 100%; */
+  width: 280px;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 15px;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
   border: 4px solid white;
   display: flex;
@@ -280,33 +311,34 @@ aside {
   margin-bottom: none;
 } */
 .photo_p {
-  height: auto;
+  height: 110px;
   width: 35%;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
 .details_populaires {
-  width: 60%;
-  margin-top:10px;
-  margin-left: 10px;
-  padding-right:40px;
+  width: 55%;
+  /* margin-top:10px; */
+  margin-left: 20px;
+  padding-right:35px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.star_p {
+/* .etoile_p {
   margin-top: 20px;
-}
+} */
 .carte_p2 i:last-child {
   color: #f2f2f2;
 }
 .carte_p3 i:last-child {
   color: #f2f2f2;
 }
+                                                                    /* ACTIVITES A MARSEILLE */
 .section_a {
   width: 100%;
-  /* margin: 30px 0px 50px 0px; */
+  margin: 30px 0px 20px 0px;
 } 
 .activites {
   width:auto;
@@ -371,6 +403,7 @@ aside {
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
   transform: translate(0px, -35px);
 }
+                                                                                /* FOOTER */
 .nav_footer {
   /* margin-top: 40px; */
   background-color: #f2f2f2;
@@ -402,15 +435,11 @@ li {
   list-style: none;
 }
 
-/* configuration pour un écran de tablette de 768px à 992px */
+                                                        /* configuration pour un écran de tablette de 768px à 992px */
 
 @media all and (min-width: 768px) and (max-width: 992px) {
-  header {
-    width:100%;
-    /* margin:; */
-    
-  }
-  .loupe {
+
+.loupe {
     display: none;
   }
 .header {
@@ -418,40 +447,44 @@ li {
   flex-direction: column;
   align-items:center;
 }
-/* .formulaire {
-  width: 272px;
- margin-left:40%;
-} */
-  .section_h {
+.formulaire {
+  display: flex;
+  justify-content: center;
+}
+.section_h {
     width: 100%;
   }
-  main {
+main {
     flex-direction: column;
   }
-  aside {
+aside {
     width: 100%;
   }
-  .cartes_p {
-    max-width: 280px;
-    margin: 0px 20px 40px 20px;
+.cartes_p {
+    width: 100%;
+    flex-direction: row;
+    /* margin: 0px 20px 40px 20px; */
   }
-  .populaires {
+ /* .populaires {
     padding: 0;
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
-  }
-}
+  
 
-/* 
-configuration pour écran de téléphone jusqu'à 768px */
+  
+ }
+
+
+                                                     /* configuration pour écran de téléphone jusqu'à 768px */
 
 @media all and (max-width: 768px) {
-  body {
+/*   body {
     min-width: 261px;
     max-width: 768px;
-  }
+  } */
   .navigation {
+    margin:0;
     width: 100%;
     flex-direction: column;
     align-content: center;
@@ -468,26 +501,42 @@ configuration pour écran de téléphone jusqu'à 768px */
     border-top: none;
     border-bottom: 3px solid #0065fc;
   }
-  .nav_logo {
+  .nav_logo_gauche {
+    display:none;
+  }
+  .nav_logo_centre{
+    display: block;
     padding: 20px 10px 0px 20px;
   }
-  header {
-    
-    min-width: 261px;
+ .nav_a_h {
+   width: 100%;
+   margin:0;
+ }
+ header {
+   margin-top:20px;
+ }
+  .header {  
+    /* min-width: 261px;
     margin: auto;
-    padding: 20px 10px;
+    padding: 20px 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+  }
+  .formulaire {
+    display: flex;
+    text-align: center;
+    justify-content: center;
   }
   form {
-    width: 194px;
+    /* width: 194px; */
     margin-top: 10px;
-    /* margin-left:50%;
-    margin-right:50%; */
-    display: inline-block;
+    position:relative;
   }
- input {
-  
-   position:relative;
- }
+.ville {
+  width: 180px;
+}
   .loupe {
     height: 30px;
     width: 30px;
@@ -496,7 +545,7 @@ configuration pour écran de téléphone jusqu'à 768px */
     background-color: #0065fc;
     color: white;
     position:absolute;
-    left:200px;
+    right:0px;
     display:inline-block;
   }
   .icone_loupe {
@@ -572,9 +621,8 @@ configuration pour écran de téléphone jusqu'à 768px */
   .section_a:nth-child(1) {
     order: 2;
       } 
-}
-  /* .section_h:nth-child(1) {
-    order: 2;
-  }
- 
 
+  .nav_footer {
+    margin-top: 20px;
+  }
+}
