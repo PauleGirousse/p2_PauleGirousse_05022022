@@ -161,7 +161,7 @@ label {
 }
 
                                                                      /* MAIN */
-main {
+.section_h_p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -437,7 +437,7 @@ li {
 
                                                         /* configuration pour un écran de tablette de 768px à 992px */
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+/* @media all and (min-width: 768px) and (max-width: 992px) {
 
 .loupe {
     display: none;
@@ -463,26 +463,15 @@ aside {
 .cartes_p {
     width: 100%;
     flex-direction: row;
-    /* margin: 0px 20px 40px 20px; */
   }
- /* .populaires {
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
   
-
-  
- }
+ } */
 
 
                                                      /* configuration pour écran de téléphone jusqu'à 768px */
-
+/* 
 @media all and (max-width: 768px) {
-/*   body {
-    min-width: 261px;
-    max-width: 768px;
-  } */
+
   .navigation {
     margin:0;
     width: 100%;
@@ -516,9 +505,7 @@ aside {
    margin-top:20px;
  }
   .header {  
-    /* min-width: 261px;
-    margin: auto;
-    padding: 20px 10px; */
+ 
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -530,7 +517,6 @@ aside {
     justify-content: center;
   }
   form {
-    /* width: 194px; */
     margin-top: 10px;
     position:relative;
   }
@@ -582,10 +568,7 @@ aside {
   .section_h {
     width: 100%;
 
-    /* padding-left: 50px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
+
   }
 
   h2 {
@@ -593,16 +576,11 @@ aside {
     margin-left:0;
   }
   .hebergements {
-    /* width:100%; */
     width:100%;
     display: flex;
 
   }
-  /* .cartes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+
   .carte_h {
     min-width:200px;
     max-width:300px;
@@ -611,10 +589,7 @@ aside {
   .plus {
     margin-left: 0px;
   }
-  /* aside:nth-child(3) {
-    width: 100%;
-    order: 1;
-  } */
+
   .carte_p {
     width: 100px;
   }
@@ -625,4 +600,4 @@ aside {
   .nav_footer {
     margin-top: 20px;
   }
-}
+} */
