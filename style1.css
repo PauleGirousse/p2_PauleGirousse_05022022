@@ -181,7 +181,7 @@ h2 {
   padding: 20px;
   background-color: #f2f2f2;
   border-radius: 20px;
-  line-height: 80%;
+  /* line-height: 80%; */
 }
 
 .cartes {
@@ -229,7 +229,7 @@ h2 {
   color: #0065fc;
   font-size:10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 /* .etoile i, .etoile_p i {
   font-size: 10px;
@@ -286,6 +286,9 @@ aside h2 {
 .icone_fleche {
   color: black;
 }
+.populaires {
+  margin-top:10px;
+}
 .cartes_p {
   min-height: 420px;
   max-width: 280px;
@@ -297,7 +300,6 @@ aside h2 {
 }
 .carte_p {
   height: 118px;
-  /* height: 100%; */
   width: 280px;
   background-color: white;
   border-radius: 15px;
@@ -319,15 +321,13 @@ aside h2 {
   width: 55%;
   /* margin-top:10px; */
   margin-left: 20px;
-  padding-right:30px;
+  padding-right:20px;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-/* .etoile_p {
-  margin-top: 20px;
-} */
+
 .carte_p2 i:last-child {
   color: #f2f2f2;
 }
@@ -370,16 +370,7 @@ aside h2 {
   height: 150px;
   width: 250px;
 }
-/* .activite_2_5 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-} 
-.activite_4_6 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}  */
+
 .carte_a {
   width: 22%;
   display: inline-block;
@@ -387,9 +378,7 @@ aside h2 {
 }
 .photo_a {
   width: 100%;
-
   border-radius: 20px 20px 20px 20px;
-  /* overflow: hidden; */
   object-fit: cover;
   position: relative;
 }
@@ -436,8 +425,12 @@ li {
 
                                                         /* configuration pour un écran de tablette de 768px à 992px */
 
-/* @media all and (min-width: 768px) and (max-width: 992px) {
+ @media all and (min-width: 768px) and (max-width: 992px) {
 
+  .navigation {
+    width:70%;
+    margin:auto;
+  }
 .loupe {
     display: none;
   }
@@ -450,21 +443,30 @@ li {
   display: flex;
   justify-content: center;
 }
-.section_h {
-    width: 100%;
+.filtres, .info {
+  justify-content:center;
+}
+
+.section_h, aside, .section_a, .nav_footer {
+    /* width: 100%; */
+    width:70%;
+    margin:auto;
   }
-main {
-    flex-direction: column;
+ .section_h_p {
+    min-height: 860px;
   }
-aside {
+  .cartes_p {
     width: 100%;
-  }
-.cartes_p {
-    width: 100%;
+    min-height:100px;
+    max-width:none;
     flex-direction: row;
+    flex-wrap:wrap;
+    align-content:space-between;
   }
-  
- } */
+  .carte_p {
+    width: 240px;
+  } 
+ } 
 
 
                                                      /* configuration pour écran de téléphone jusqu'à 768px */
@@ -472,7 +474,7 @@ aside {
 @media all and (max-width: 768px) {
 
 body {
-  max-width: 270px;
+  max-width: 310px;
   /* width:45%; */
   margin:auto;
 }
@@ -516,8 +518,13 @@ body {
    text-align: center;
  }
  header {
-   padding:20px 0px 0px 20px;
+   width: 270px;
+   margin: auto;
+   /* padding:20px 15px 0px 15px; */
    /* align-items:flex-start; */
+ }
+ h1 {
+   font-size: 18px;;
  }
   .header {  
      display: flex;
@@ -534,7 +541,7 @@ body {
     position:relative;
   }
 .ville {
-  width: 200px;
+  width: 230px;
 }
   .loupe {
     height: 40px;
@@ -581,34 +588,65 @@ body {
   }
   .section_h {
     width: 100%;
-
+    background-color: white;
+    margin-top:0px;
 
   }
 
   h2 {
     width: 100%;
     margin-left:0;
+    font-size: 18px;
+  }
+  .section_h h2 {
+    padding-left:0px;
+    padding-bottom: 10px;
   }
   .hebergements {
-    width:100%;
     display: flex;
-
   }
+  .cartes {
+    height:1150px;
 
+}
   .carte_h {
-    min-width:200px;
-    max-width:300px;
-
+    height:174px;
+    width:100%;
+    margin:0;
+    box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
+  }
+  .details_hebergements {
+    line-height: 80%;
   }
   .plus {
     margin-left: 0px;
   }
+.section_a {
+  height: auto;
+  padding:0 20px;
+}
+  .activites {
+    height:1200px;
+    flex-direction:column;
 
-  .section_a:nth-child(1) {
-    order: 2;
-      } 
-
+  }
+.carte_a {
+  height: 174px;
+  width: 100%;
+}
+.photo_a {
+  height: 150px;
+}
+.activite_2_5, .activite_4_6 {
+  height: 380px;
+}
   .nav_footer {
+    width:100%;
     margin-top: 20px;
+    flex-direction:column;
+  }
+  .nav {
+    width: 100%;
+    padding: 10px 20px 10px 20px;
   }
 } 
