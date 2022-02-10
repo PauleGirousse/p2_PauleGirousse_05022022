@@ -11,10 +11,10 @@ html {
 
                                                         /* configuration pour un écran de plus de 992px  */
 body {
-  font-family: "Raleway", sans-serif;
   width: 1200px;
-  margin: auto;
   font-size: 12px;
+  font-family: "Raleway", sans-serif;
+  margin: auto;
 }
 
 .navigation, header, main {
@@ -30,8 +30,8 @@ body {
 } 
 .nav_logo_gauche {
   max-width: 150px;
-  padding: 20px 10px 0px 20px;
   margin-bottom: 20px;
+  padding: 20px 10px 0px 20px;
 }
 .nav_logo_centre {
   display: none;
@@ -80,25 +80,25 @@ label {
   transform: translate(-250%, 100%);
 }
 .ville {
-  font-family: "Raleway", sans-serif;
-  background-color: white;
-  border: 1px solid #f2f2f2;
-  font-weight: 700;
   height: 40px;
   width:240px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  background-color: white;
+  border: 1px solid #f2f2f2;
   padding-left: 10px;
   
 }
 .bouton_texte {
-  background-color: #0065fc;
-  color: white;
   height: 40px;
   font-family: "Raleway", sans-serif;
   font-size: 10px;
   font-weight: 700;
-  padding: 10px;
+  background-color: #0065fc;
+  color: white;
   border: 1px solid #0065fc;
   border-radius: 0px 10px 10px 0px; 
+  padding: 10px;
   position: absolute;  
   right:0px;
 }
@@ -106,16 +106,16 @@ label {
   display: none;
 }
 .rond {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #deebff;
-  width: 38px;
   height: 38px;
+  width: 38px;
+  background-color: #deebff;
   border-radius: 50%;
   position: absolute;
   top: -2px;
   left: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .icone {
   color: #0065fc;
@@ -129,14 +129,14 @@ label {
   align-items: baseline;
 }
 .filtre {
-  margin: 10px 5px 5px 20px;
-  padding: 10px;
   border: 2px solid #f2f2f2;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-left: 40px;
+  margin: 10px 5px 5px 20px;
+  padding: 10px 10px 10px 40px;
+  /* padding-left: 40px; */
   position: relative;
 }
 .info {
@@ -145,14 +145,14 @@ label {
   align-items: center;
 }
 .rond_info {
+  height: 20px;
+  width: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 50%;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #f2f2f2;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin-right: 10px;
 }
 .icone_info {
   color: #0065fc;
@@ -177,11 +177,10 @@ h2 {
 }
 .section_h {
   width: 65%;
-  margin-top: 20px;
-  padding: 20px;
   background-color: #f2f2f2;
   border-radius: 20px;
-  /* line-height: 80%; */
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .cartes {
@@ -195,11 +194,11 @@ h2 {
   /* max-width: 100%; */
   height:170px;
   line-height: 80%;;
-  margin: 10px;
   background-color: white;
   border: 4px solid white;
   border-radius: 20px;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
+  margin: 10px;
 }
 .photo_h {
   /* height:350px;
@@ -216,8 +215,6 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* height: 80px; */
-  /* padding: 0px 10px; */
 }
 .nom {
   font-weight: bold;
@@ -234,12 +231,6 @@ h2 {
   margin-top: 10px;
   margin-bottom: 5px;
 }
-/* .etoile i, .etoile_p i {
-  font-size: 10px;
-} */
-/* .etoile_p i {
-  font-size: 12px;
-} */
 .carte_h1 i:last-child {
   color: #f2f2f2;
 }
@@ -256,30 +247,26 @@ h2 {
   color: #f2f2f2;
 }
 .plus {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
   margin-left: 20px;
   margin-top: 30px;
   margin-bottom: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-  color: black;
   display: block;
 }
                                                                     /* LES PLUS POPULAIRES */
 aside {
   width: 32%;
-  margin-top: 20px;
-  /* padding: 20px 20px 10px 20px; */
-  padding: 20px;
   background-color: #f2f2f2;
   border-radius: 20px;
+  margin-top: 20px;
+  padding: 20px;
 }
 aside h2 {
   width: 80%;
 }
-/* .populaire {
-  height: 100%;
-} */
 .titre {
   width: 85%;
   margin:0px 20px;
@@ -295,7 +282,6 @@ aside h2 {
 }
 .cartes_p {
   min-height: 420px;
-  /* max-width: 280px; */
   margin-bottom: 20px;
   padding: 0px 20px 0px 20px;
   display: flex;
@@ -323,10 +309,8 @@ aside h2 {
 }
 .details_populaires {
   width: 55%;
-  /* margin-top:10px; */
   margin-left: 20px;
   padding-right:20px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -387,9 +371,9 @@ aside h2 {
   position: relative;
 }
 .legende {
-  background-color: white;
   width: 100%;
   font-weight: 700;
+  background-color: white;
   padding: 15px 20px;
   border-radius: 0 0 20px 20px;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
@@ -397,7 +381,6 @@ aside h2 {
 }
                                                                                 /* FOOTER */
 .nav_footer {
-  /* margin-top: 40px; */
   background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
@@ -452,7 +435,6 @@ li {
 }
 
 .section_h, aside, .section_a, .nav_footer {
-    /* width: 100%; */
     width:70%;
     margin:auto;
   }
@@ -461,7 +443,6 @@ li {
   }
   .titre {
     width:97%;
-    /* margin:0px 10px; */
   }
   .cartes_p {
     width: 100%;
@@ -530,7 +511,6 @@ body {
     padding: 20px 10px 0px 20px;
   }
  .nav_a_h {
-  
   display: flex;
   justify-content: space-between;
   width: 100%;   
@@ -542,14 +522,12 @@ body {
  header {
    width: 270px;
    margin: auto;
-   /* padding:20px 15px 0px 15px; */
-   /* align-items:flex-start; */
- }
+   }
  h1 {
-   font-size: 18px;;
+   font-size: 18px;
  }
   .header {  
-     display: flex;
+    display: flex;
     flex-direction: column;
     align-items:flex-start;
   }
@@ -588,6 +566,7 @@ body {
     flex-wrap: wrap;
   }
   .texte_filtres {
+    margin-top:0;
     flex-basis: 150px;
   }
   .filtre {
@@ -603,6 +582,7 @@ body {
   }
   aside {
     width: 100%;
+    padding:20px 0;
     border-radius:0;
   }
   .carte_p {
@@ -612,7 +592,7 @@ body {
     width: 100%;
     background-color: white;
     margin-top:0px;
-
+    /* padding:0 20px; */
   }
 
   h2 {
@@ -621,15 +601,14 @@ body {
     font-size: 18px;
   }
   .section_h h2 {
-    padding-left:0px;
     padding-bottom: 10px;
+    padding-left:0px;
   }
   .hebergements {
     display: flex;
   }
   .cartes {
     height:1150px;
-
 }
   .carte_h {
     height:174px;
@@ -647,11 +626,10 @@ body {
   height: auto;
   padding:0 20px;
 }
-  .activites {
-    height:1200px;
-    flex-direction:column;
-
-  }
+.activites {
+  height:1200px;
+  flex-direction:column;
+}
 .carte_a {
   height: 174px;
   width: 100%;
@@ -662,13 +640,13 @@ body {
 .activite_2_5, .activite_4_6 {
   height: 380px;
 }
-  .nav_footer {
-    width:100%;
-    margin-top: 20px;
-    flex-direction:column;
-  }
-  .nav {
-    width: 100%;
-    padding: 10px 20px 10px 20px;
-  }
+.nav_footer {
+  width:100%;
+  margin-top: 20px;
+  flex-direction:column;
+}
+.nav {
+  width: 100%;
+  padding: 10px 20px 10px 20px;
+ }
 } 
