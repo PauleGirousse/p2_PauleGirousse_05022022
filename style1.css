@@ -11,7 +11,7 @@ html {
 
                                                         /* configuration pour un écran de plus de 992px  */
 body {
-  width: 1200px;
+  max-width: 1200px;
   font-size: 12px;
   font-family: "Raleway", sans-serif;
   margin: auto;
@@ -56,32 +56,26 @@ h1 {
 }
 
 .formulaire {
+  height: 40px;
+  margin: 10px 0;
   display: flex;
   text-align: center;
-  justify-content: flex-start;
 }
-
-form {
-  height: 40px;
-  margin: 10px 10px 10px 40px;
-  position: relative;
-}
-label {
+.icone_lieu {
   height: 40px;
   width: 40px;
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
-  position: absolute;
-  transform: translate(-40px, 0px);
-}
-.icone_lieu {
-  position: absolute;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  /* position: absolute;
   z-index: 1;
-  transform: translate(-250%, 100%);
+  transform: translate(-250%, 100%); */
 }
 .ville {
   height: 40px;
-  width:240px;
+  width:150px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   background-color: white;
@@ -99,8 +93,8 @@ label {
   border: 1px solid #0065fc;
   border-radius: 0px 10px 10px 0px; 
   padding: 10px;
-  position: absolute;  
-  right:0px;
+  /* position: absolute;  
+  right:0px; */
 }
 .loupe {
   display: none;
@@ -123,10 +117,13 @@ label {
 .texte_filtres {
   margin-right: 20px;
 }
-.filtres {
+.titre_filtres {
   font-weight: 700;
   display: flex;
-  align-items: baseline;
+  align-items:baseline;
+}
+.filtres {
+  display: flex;
 }
 .filtre {
   border: 2px solid #f2f2f2;
@@ -189,9 +186,8 @@ h2 {
   justify-content: space-between;
 }
 .carte_h {
-  /* min-width:230px; */
-  min-width:29%;
-  /* max-width: 100%; */
+  min-width:195px;
+  max-width: 295px;
   height:170px;
   line-height: 80%;;
   background-color: white;
@@ -199,10 +195,12 @@ h2 {
   border-radius: 20px;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
   margin: 10px;
+  flex:1;
 }
 .photo_h {
   /* height:350px;
   width:240px; */
+  min-width:195px;
   height: 90px;
   width: 100%;
   border-radius: 20px 20px 0 0;
@@ -265,10 +263,10 @@ aside {
   padding: 20px;
 }
 aside h2 {
-  width: 80%;
+  /* width: 80%; */
+  flex:1;
 }
 .titre {
-  width: 85%;
   margin:0px 20px;
   display: flex;
   justify-content: space-between;
@@ -282,15 +280,16 @@ aside h2 {
 }
 .cartes_p {
   min-height: 420px;
-  margin-bottom: 20px;
-  padding: 0px 20px 0px 20px;
+  min-width: 248px;
+  margin: 10px 20px 20px 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .carte_p {
-  height: 118px;
-  width: 280px;
+  max-height: 118px;
+  min-width: 240px;
+  max-width: 280px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.16);
@@ -303,7 +302,7 @@ aside h2 {
 } 
 .photo_p {
   height: 110px;
-  width: 35%;
+  width: 95px;
   border-radius: 10px 0px 0px 10px;
   object-fit: cover;
 }
@@ -414,10 +413,10 @@ li {
 
  @media all and (min-width: 768px) and (max-width: 992px) {
 
-  .navigation {
+  /* .navigation {
     width:70%;
     margin:auto;
-  }
+  } */
 .loupe {
     display: none;
   }
@@ -430,28 +429,34 @@ li {
   display: flex;
   justify-content: center;
 }
-.filtres, .info {
+.titre_filtres, .info {
   justify-content:center;
 }
 
 .section_h, aside, .section_a, .nav_footer {
-    width:70%;
+    width:100%;
     margin:auto;
   }
  .section_h_p {
     min-height: 860px;
+    row-gap: 20px;
+    flex-direction: column-reverse;
   }
-  .titre {
-    width:97%;
+  aside {
+    max-width: 859px;
   }
   .cartes_p {
     width: 100%;
-    min-height:100px;
-    max-width:none;
+    min-height:auto;
+    min-width: 260px;
+    margin:auto;
     padding:10px;
+    row-gap: 20px;
+    column-gap: 10px;
     flex-direction: row;
     flex-wrap:wrap;
     align-content:space-between;
+
   }
   .carte_p {
     width: 230px;
@@ -477,9 +482,9 @@ li {
 @media all and (max-width: 768px) {
 
 body {
-  max-width: 310px;
+  min-width: 300px;
   /* width:45%; */
-  margin:auto;
+  /* margin:auto; */
 }
 .navigation, header, main {
   padding-left:0px;
@@ -520,28 +525,26 @@ body {
    text-align: center;
  }
  header {
-   width: 270px;
-   margin: auto;
-   }
+    margin: 0 20px;
+   } 
  h1 {
    font-size: 18px;
  }
-  .header {  
+  .header { 
     display: flex;
     flex-direction: column;
     align-items:flex-start;
   }
   .formulaire {
-    padding:15px 0px 15px 0px;
     display: flex;
     text-align: center;
-    justify-content: flex-start;
+    justify-content:flex-start;
   }
-  form {
+  /* form {
     position:relative;
-  }
+  } */
 .ville {
-  width: 230px;
+  width: 180px;
 }
   .loupe {
     height: 40px;
@@ -550,31 +553,38 @@ body {
     border: 1px solid #0065fc;
     background-color: #0065fc;
     color: white;
-    position:absolute;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* position:absolute;
     right:0px;
-    display:inline-block;
+    display:inline-block; */
   }
   .icone_loupe {
-    font-size:10px;
+    font-size:16px;
   }
   .bouton_texte {
     display: none;
   }
+  .titre_filtres {
+    flex-direction: column;
+    margin-top:20px;
+  }
   .filtres {
-    max-width: 289px;
+    /* max-width: 300px; */
     display: flex;
     flex-wrap: wrap;
   }
   .texte_filtres {
     margin-top:0;
-    flex-basis: 150px;
+    /* flex-basis: 150px; */
   }
   .filtre {
     margin: 0px 10px 10px 5px;
     padding: 10px 10px 10px 35px;
   }
   .rond_info {
-    width: 28px;
+    width: 20px;
     margin-left: 5px;
   }
   .section_h_p {
@@ -587,6 +597,7 @@ body {
   }
   .carte_p {
     width: 100%;
+    row-gap: 20px;
   }
   .section_h {
     width: 100%;
@@ -606,10 +617,12 @@ body {
   }
   .hebergements {
     display: flex;
-  }
+    flex-direction:column;
+  } 
   .cartes {
-    height:1150px;
-}
+    flex-direction: column;
+    row-gap: 20px;
+} 
   .carte_h {
     height:174px;
     width:100%;
@@ -622,6 +635,7 @@ body {
   .plus {
     margin-left: 0px;
   }
+
 .section_a {
   height: auto;
   padding:0 20px;
