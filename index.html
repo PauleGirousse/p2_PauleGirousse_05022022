@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="recherche d'hébergements" />
+    <meta name="description" content="recherche d'offres d'hébergements par ville" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="steelsheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="steelsheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/217941a73b.js"
       crossorigin="anonymous"
     ></script>
     <title>Booki</title>
   </head>
+  
   <body>
+
+   <header>                                                              
+                                                                 <!-- BARRE DE NAVIGATION -->
     <nav class="navigation">
       <div>
         <img class="nav_logo_gauche" src="images/logo/Booki.png" alt="Logo Booki" />
@@ -30,16 +34,18 @@
         <a class="nav_a" href="#Activites">Activités</a>
       </div>
     </nav>
-    <header>
+
+                                                                          <!-- HEADER -->
+
       <div class="header">
         <h1>Trouvez votre hébergement pour des vacances de rêve </h1>
         <span>En plein centre ville ou en pleine nature</span>
       </div>
 
-                                                                        <!-- Formulaire -->
+                       <!-- Formulaire -->
 
 
-      <!-- <div class="formulaire"> -->
+      
         
         <form class="formulaire" method="post" action="traitement.php">
           <div class="icone_lieu">
@@ -60,6 +66,7 @@
           <input type="button" class="bouton_texte" value="Rechercher" />
         </form>
   
+                      <!-- FILTRES -->
 
       <div class="titre_filtres">
         
@@ -67,12 +74,11 @@
         <div class="filtres">
           <div class="filtre filtre_economique">
             <div class="rond">
-              <div>
                 <i
                   class="fas fa-money-bill-wave icone"
                   style="font-size: 12px"
                 ></i>
-              </div>
+            
             </div>
             <div>Economique</div>
           </div>
@@ -106,7 +112,7 @@
         </div>
       </div>
 
-      <!-- Info -->
+                                                                               <!-- Info -->
 
       <div class="info">
         <div class="rond_info">
@@ -118,6 +124,7 @@
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
     </header>
+                                                                                <!-- MAIN -->
     <main>
 
       <div class="section_h_p">
@@ -128,8 +135,11 @@
           <h2 id="Hebergements">Hébergements à Marseille</h2>
 
           <div class="hebergements">
+
             <div class="cartes">
-              <div class="carte_h carte_h1">
+
+              <a class="carte_h carte_h1"
+                  href="#">
                 <img
                   src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                   alt="chambre 2 lits superposés"
@@ -147,9 +157,10 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="carte_h carte_h2">
+              <a class="carte_h carte_h2"
+                  href="#">
                 <img
                   src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                   alt="chambre 2 lits simples"
@@ -167,9 +178,10 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="carte_h carte_h3">
+              <a class="carte_h carte_h3"
+                  href="#">
                 <img
                   src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                   alt="chambre lit double"
@@ -187,9 +199,10 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="carte_h carte_h4">
+              <a class="carte_h carte_h4"
+                  href="#">
                 <img
                   src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                   alt="chambre lit double"
@@ -207,9 +220,10 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="carte_h carte_h5">
+              <a class="carte_h carte_h5"
+                  href="#">
                 <img
                   src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                   alt="chambre 4 lits superposés"
@@ -226,12 +240,13 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </a>
 
-              <div class="carte_h carte_h6">
+              <a class="carte_h carte_h6"
+                  href="#">
                 <img
                   src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
-                  alt="chambre"
+                  alt="chambre 2 lits"
                   class="photo_h"
                 />
 
@@ -246,25 +261,30 @@
                     <i class="fas fa-star"></i>
                   </div>
                 </div>
-              </div>
+              </a>
+
             </div>
           </div>
           <a href="#" class="plus">Afficher plus</a>
         </section>
 
 
-                                  <!-- LES PLUS POPULAIRES -->
+                                                                                      <!-- LES PLUS POPULAIRES -->
 
 
         <aside>
+
           <div class="populaires">
+
             <div class="titre">
               <h2>Les plus populaires</h2>
               <i class="fas fa-chart-line icone_fleche" style="font-size: 20px"></i>
             </div>
 
               <div class="cartes_p">
-                <div class="carte_p carte_p1">
+
+                <a class="carte_p carte_p1"
+                    href="#">
                   <img
                     src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                     alt="chambre lit double"
@@ -284,9 +304,10 @@
                       <i class="fas fa-star star"></i>
                     </div>
                   </div>
-                </div>
+                </a>
               
-                <div class="carte_p carte_p2">
+                <a class="carte_p carte_p2"
+                    href="#">
                   <img
                     src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                     alt="chambre lit double"
@@ -307,10 +328,11 @@
                       <i class="fas fa-star star"></i>
                     </div>
                   </div>
-                </div>
+                </a>
             
 
-                <div class="carte_p carte_p3">
+                <a class="carte_p carte_p3"
+                    href="#">
                   <img
                     src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                     alt="chambre lit double"
@@ -330,45 +352,49 @@
                       <i class="fas fa-star star"></i>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
           </div>
         </aside>
       </div>
 
-                                                         <!-- ACTIVITES A MARSEILLE -->
+                                                                                <!-- ACTIVITES A MARSEILLE -->
 
 
 
       <section class="section_a">
+
         <h2 id="Activites">Activités à Marseille</h2>
 
         <div class="activites">
+       
 
-         
-
-            <div class="carte_a activite_1">
+            <a class="carte_a activite_1"
+                href="#">
               <img
                 src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                 alt="vieux port"
                 class="photo_a photo_1 "
-              />
+                />
             
               <div class="legende">Vieux Port</div>
-            </div>
+            </a>
         
       
-            <div class="carte_a activite_2">
+            <a class="carte_a activite_2"
+                href="#">
               <img
                 src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="fort de Pomègues"
                 class="photo_a photo_2"
                 />
                 
-                <div class="legende">Fort de Pomègues</div>
-              </div>
+              <div class="legende">Fort de Pomègues</div>
+            </a>
               
-              <div class="carte_a activite_5">
+
+            <a class="carte_a activite_5"
+                  href="#">
                 <img
                  src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                  alt="Île du Frioul"
@@ -376,9 +402,11 @@
                 />
               
                 <div class="legende">Île du Frioul</div>
-              </div>
+            </a>
+
               
-              <div class="carte_a activite_3">
+            <a class="carte_a activite_3"
+                  href="#">
                 <img
                 src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                 alt="Parc National des calanques"
@@ -386,41 +414,43 @@
                 />
                 
                 <div class="legende">Parc National des Calanques</div>
-              </div>
+            </a>
               
 
-              <div class="carte_a activite_4">
-                
+            <a class="carte_a activite_4"
+                  href="#">
                 <img
                 src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                 alt="Notre-Dame-de-la-Garde"
                 class="photo_a photo_4"
                 />
               
-              <div class="legende">Notre-Dame-de-la-Garde</div>
-            </div>
+                <div class="legende">Notre-Dame-de-la-Garde</div>
+            </a>
               
                 
-              <div class="carte_a activite_6">
-                 <div>
+            <a class="carte_a activite_6"
+                  href="#">
                   <img
                     src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                     alt="Parc Longchamp"
                     class="photo_a photo_6"
                     />
-                  </div>
+          
                   <div class="legende">Parc Longchamp</div>
-              </div>
-
-
+            </a>
+ 
             
-            
-          </div>
-       </section>
-      </main>
+        </div>
+
+      </section>
+    </main>
+
     <footer class="nav_footer">
+
       <div class="nav">
         <h3>A propos</h3>
+
         <nav>
           <ul class="liste">
             <li><a class="lien" href="#">Fonctionnement du site</a></li>
@@ -449,6 +479,7 @@
           </ul>
         </nav>
       </div>
+
     </footer>
   </body>
 </html>
