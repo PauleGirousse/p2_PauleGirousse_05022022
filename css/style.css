@@ -18,7 +18,7 @@ body {
   margin: auto;
 }
 
-nav,
+
 header,
 main {
   padding-left: 30px;
@@ -27,6 +27,8 @@ main {
 
 /* BARRE DE NAVIGATION */
 nav {
+  margin-top: 20px;
+  margin-bottom:30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,18 +36,13 @@ nav {
 
 .logo_booki {
   max-width: 100px;
-  margin-bottom: 20px;
-  /* padding: 20px 10px 0px 20px; */
 }
-
-
-
 
 nav a {
   color: black;
   text-decoration: none;
   border-top: 3px solid transparent;
-  padding: 40px 20px 10px 20px;
+  padding: 35px 20px 10px 20px;
 }
 
 nav a:hover {
@@ -60,7 +57,7 @@ nav a:focus {
 
 /* HEADER */
 h1 {
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 .header p {
@@ -128,7 +125,7 @@ h1 {
 }
 
 .texte_filtres {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .titre_filtres {
@@ -142,13 +139,13 @@ h1 {
 }
 
 .filtre {
-  border: 1px solid #f2f2f2;
+  border: 2px solid #f2f2f2;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-right: 20px;
-  padding: 0px 20px 0px 0px;
+  margin-right: 15px;
+  padding: 0px 15px 0px 0px;
   cursor: pointer;
   column-gap: 10px;
   display: flex;
@@ -170,7 +167,7 @@ h1 {
 .info {
   margin-top: 10px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 .rond_info {
@@ -508,13 +505,13 @@ li {
   }
 
   .header {
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
   }
 
   .formulaire {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
   }
 
@@ -596,19 +593,25 @@ li {
 @media all and (max-width: 768px) {
 
   body {
-    min-width: 300px;
+    min-width: 330px;
+    font-size: 14px;
   }
 
-  nav,
   header,
   main {
     padding-left: 0px;
     padding-right: 0px;
   }
-
+  
   nav {
+    margin:0;
     flex-direction: column;
     align-content: center;
+  }
+  .logo_booki {
+    width: 120px;
+    display: block;
+    padding: 20px 10px 0px 20px;
   }
 
   nav a {
@@ -627,13 +630,6 @@ li {
     border-bottom: 3px solid #0065fc;
   }
 
-
-  .logo_booki {
-    display: block;
-    width: 120px;
-    padding: 20px 10px 0px 20px;
-  }
-
   .nav_a_h {
     display: flex;
     justify-content: space-between;
@@ -646,25 +642,24 @@ li {
     text-align: center;
   }
 
-  header {
-    margin: 0 20px;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
   .header {
+    margin:0 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
+  h1 {
+    margin: 30px 0 10px 0;
+  }
+
+  header p {
+    margin-bottom:0;
+  }
   .formulaire {
-    margin: 30px 0;
-    display: flex;
-    text-align: center;
-    justify-content: flex-start;
+    margin: 30px 20px;
+    justify-content: center;
+
   }
 
   .ville {
@@ -696,23 +691,23 @@ li {
   .titre_filtres {
     min-width: 296px;
     flex-direction: column;
-    margin-top: 20px;
+    margin: 20px;
   }
 
   .filtres {
-    row-gap: 8px;
+    row-gap: 10px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .texte_filtres {
     margin-top: 0;
+    margin-bottom:15px;
   }
 
-  /* .filtre {
-    margin: 0px 10px 10px 5px;
-    padding: 10px 10px 10px 35px;
-  } */
+  .info {
+    margin:0 15px;
+  }
   .rond_info {
     width: 20px;
     margin-left: 5px;
@@ -819,27 +814,27 @@ li {
   }
 
   .photo_1 {
-    object-position: 50% 19%;
+    object-position: 50% 25%;
   }
 
   .photo_2 {
-    object-position: 50% 43%;
+    object-position: 50% 44%;
   }
 
   .photo_3 {
-    object-position: 50% 20%;
+    object-position: 50% 26%;
   }
 
   .photo_5 {
-    object-position: 50% 19%;
+    object-position: 50% 25%;
   }
 
   .photo_4 {
-    object-position: 50% 16%;
+    object-position: 50% 26%;
   }
 
   .photo_6 {
-    object-position: 50% 27%;
+    object-position: 50% 30%;
   }
 
   footer {
@@ -848,6 +843,10 @@ li {
     flex-direction: column;
   }
 
+  ul {
+    margin-bottom:0;
+  }
+  
   .listes {
     width: 100%;
     padding: 20px 20px 0px 20px;
