@@ -740,7 +740,6 @@ li {
   }
 
   .cartes {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -818,7 +817,6 @@ li {
 
   footer {
     width: 100%;
-    margin-top: px;
     flex-direction: column;
   }
 
