@@ -27,14 +27,15 @@ main {
 
 /* BARRE DE NAVIGATION */
 nav {
-  margin-top: 38px;
+  margin-top: 20px;
   margin-bottom:30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .logo_booki {
-  max-width: 100px;
+  width: 100px;
 }
 
 nav a {
@@ -63,14 +64,13 @@ h1 {
   margin-top: 0;
 }
 .formulaire {
-  /* height: 40px; */
+  height: 40px;
   margin: 15px 0 20px 0;
   display: flex;
   text-align: center;
 }
 
 .icone_lieu {
-  height: 40px;
   width: 40px;
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
@@ -81,7 +81,6 @@ h1 {
 }
 
 .ville {
-  height: 40px;
   width: 180px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -91,7 +90,6 @@ h1 {
 }
 
 .bouton_texte {
-  height: 40px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   background-color: #0065fc;
@@ -130,7 +128,7 @@ h1 {
 .titre_filtres {
   font-weight: 700;
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
 }
 
 .filtres {
@@ -171,8 +169,8 @@ h1 {
 }
 
 .rond_info {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border: 1px solid #f2f2f2;
   border-radius: 50%;
   margin-right: 10px;
@@ -191,7 +189,6 @@ h1 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  /* align-items: flex-start; */
 }
 
 h2 {
@@ -259,7 +256,6 @@ a {
 }
 
 .prix {
-  font-size: 12px;
   margin-top: 10px;
 }
 
@@ -362,8 +358,6 @@ aside {
 
 .details_populaires {
   min-width: 140px;
-  /*pour éviter que le texte sorte de la carte */
-  max-width: 155px;
   width: 55%;
   margin-left: 20px;
   padding-right: 20px;
@@ -394,8 +388,8 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-between;
   justify-content: space-between;
+  align-content: space-between;
 }
 
 .carte_a {
@@ -454,7 +448,6 @@ aside {
 
 .legende {
   width: 100%;
-  z-index: 1;
   font-weight: 700;
   background-color: white;
   padding: 15px 20px;
@@ -500,24 +493,24 @@ li {
 
 @media all and (min-width: 769px) and (max-width: 992px) {
 
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
   .loupe {
     display: none;
   }
 
-  .header {
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .formulaire {
-    /* display: flex; */
-    justify-content: center;
-  }
-
-  .titre_filtres,
+  .formulaire,
   .info {
     justify-content: center;
+  }
+
+
+  aside,
+  .section_h,
+  .section_a {
+    max-width: 859px;
   }
   .section_h,
   aside,
@@ -527,11 +520,6 @@ li {
     margin: auto;
   } 
 
-  aside,
-  .section_h,
-  .section_a {
-    max-width: 859px;
-  }
 
   .section_h_p {
     min-height: 860px;
@@ -609,9 +597,8 @@ li {
     align-content: center;
   }
   .logo_booki {
-    width: 120px;
+    margin-top: 20px;
     display: block;
-    padding: 20px 10px 0px 20px;
   }
 
   nav a {
@@ -690,8 +677,8 @@ li {
 
   .titre_filtres {
     min-width: 296px;
-    flex-direction: column;
     margin: 20px;
+    flex-direction: column;
   }
 
   .filtres {
@@ -708,11 +695,7 @@ li {
   .info {
     margin:0 15px;
   }
-  .rond_info {
-    width: 20px;
-    margin-left: 5px;
-  }
-
+ 
   .section_h_p {
     flex-direction: column-reverse;
   }
@@ -755,10 +738,6 @@ li {
     padding-bottom: 10px;
     padding-left: 0px;
   }
-
-  /* .hebergements {
-    flex-direction: column;
-  } */
 
   .cartes {
     display: flex;
