@@ -249,10 +249,11 @@ a {
   justify-content: space-around;
 }
 
-.nom {
+h4 {
   font-weight: bold;
   font-size: 14px;
   margin-top: 10px;
+  margin-bottom:0;
 }
 
 .prix {
